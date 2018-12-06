@@ -2,12 +2,35 @@
     <head>
         <title>Favorite Penguin</title>
         <style type="text/css">
+           #cf {
+               position:relative;
+               height:281px;
+               width:450px;
+               margin:0 auto;
+           }
+
+           #cf img {
+               position:absolute;
+               left:0;
+               -webkit-transition: opacity 1s ease-in-out;
+               -moz-transition: opacity 1s ease-in-out;
+               -o-transition: opacity 1s ease-in-out;
+               transition: opacity 1s ease-in-out;
+            }
+
+           #cf img.top:hover {
+               opacity:0;
+            }
           
         </style>
     </head>
     <body>
       <h1>My favorite penguin is the Galapagos Penguin!</h1>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/qbtIUK_F-I0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <img src="https://download.ams.birds.cornell.edu/api/v1/asset/55651481/large">
+      <img src=>
+       <div id="cf">
+           <img class="bottom" src="https://amp.thisisinsider.com/images/5ad746638a376dbe528b45a3-750-563.jpg" width="500" height="300"/>
+           <img class="top" src="http://www.facts-about.info/wp-content/uploads/2014/12/Galapagos-Penguin-on-lava-rocks.jpg" width="500" height="400" />
+        </div>
     </body>
 </html>
